@@ -84,7 +84,6 @@ const logger = {
     else Object.keys(this).forEach((key) => console.log(this[key]));
   },
 };
-console.log("KKKKKKKKKKKKKKKKKKKKKK");
 logger.printKey();
 logger.printValue();
 
@@ -96,7 +95,6 @@ logger.printKey.bind(person)();
 
 // - 2 вариант - тоже что и  bind, но сразу вызывает возвращаемую функцию,
 // принимает в себя любок количество парметров - контекст и пречисление аргументов
-console.log('textttttttttttttttttttttt')
 logger.printValue.call(person, true);
 
 // - 3 вариант - тоже что и call, но
